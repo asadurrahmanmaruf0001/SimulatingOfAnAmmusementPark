@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.CreateAccountFxml">
+   <children>
+      <TextField fx:id="fullNameTextField" layoutX="42.0" layoutY="67.0" promptText="Full Name" />
+      <TextField fx:id="phoneNoTextField" layoutX="43.0" layoutY="120.0" promptText="Phone No" />
+      <TextField fx:id="emailTextField" layoutX="43.0" layoutY="175.0" promptText="Email" />
+      <ComboBox fx:id="userTypeComboBox" layoutX="234.0" layoutY="67.0" prefWidth="150.0" promptText="User Type" />
+      <DatePicker fx:id="dateOfBirthDatePicker" layoutX="234.0" layoutY="120.0" prefHeight="26.0" prefWidth="150.0" promptText="Date Of Birth" />
+      <PasswordField fx:id="passwordPasswordField" layoutX="235.0" layoutY="175.0" promptText="Password" />
+      <TextArea fx:id="addressTextArea" layoutX="408.0" layoutY="67.0" prefHeight="134.0" prefWidth="162.0" promptText="Address" />
+      <Label layoutX="223.0" layoutY="14.0" text="Create Account">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="showOutputTextArea" layoutX="192.0" layoutY="277.0" prefHeight="97.0" prefWidth="200.0" promptText="Show Output" />
+      <Button layoutX="260.0" layoutY="223.0" mnemonicParsing="false" onAction="#createAccountButtonOnAction" text="Create Account" />
+      <Button layoutX="489.0" layoutY="349.0" mnemonicParsing="false" onAction="#loginButtonOnAction" text="Login" />
+   </children>
+</AnchorPane>

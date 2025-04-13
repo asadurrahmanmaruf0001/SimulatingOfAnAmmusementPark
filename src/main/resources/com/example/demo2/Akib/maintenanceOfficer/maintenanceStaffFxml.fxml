@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.Akib.maintenanceStaffDirectoryController">
+   <children>
+      <Label layoutX="196.0" layoutY="31.0" text="Maintenance Staff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="taskTableView" layoutX="14.0" layoutY="78.0" prefHeight="200.0" prefWidth="350.0">
+        <columns>
+          <TableColumn fx:id="taskTableColumn" prefWidth="75.0" text="Task" />
+          <TableColumn fx:id="equipmentTableColumn" prefWidth="158.39996337890625" text="Equipment" />
+            <TableColumn fx:id="issueSeverityTableColumn" prefWidth="116.0" text="Issue Severity" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="selectMaintenanceStaffComboBox" layoutX="403.0" layoutY="78.0" prefHeight="26.0" prefWidth="182.0" promptText="Select Maintenance Staff " />
+      <DatePicker fx:id="taskDateDatePicker" layoutX="406.0" layoutY="188.0" prefHeight="26.0" prefWidth="182.0" promptText="Task Date" />
+      <Button layoutX="406.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="182.0" text="Assign Staff" />
+      <TextField fx:id="filterBySkillsTextField" layoutX="406.0" layoutY="137.0" prefHeight="26.0" prefWidth="182.0" promptText="Filter By Skills" />
+      <Label fx:id="messageLabel" layoutX="405.0" layoutY="302.0" prefHeight="76.0" prefWidth="182.0" />
+   </children>
+</AnchorPane>
