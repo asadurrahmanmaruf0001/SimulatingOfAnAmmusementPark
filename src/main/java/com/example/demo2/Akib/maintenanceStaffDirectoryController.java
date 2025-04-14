@@ -23,4 +23,5 @@ public class maintenanceStaffDirectoryController
 
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+}

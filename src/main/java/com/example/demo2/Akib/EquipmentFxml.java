@@ -1,5 +1,9 @@
 package com.example.demo2.Akib;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+
 public class EquipmentFxml
 {
     @javafx.fxml.FXML
