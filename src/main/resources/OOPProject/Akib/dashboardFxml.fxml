@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane
+
+        maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.DashboardController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="164.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#maintenanceTaskScheduleButtonOnAction" prefHeight="25.0" prefWidth="200.0" text="Maintenance Task Schedule" />
+            <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#technicalIsuueButtonOnAction" prefHeight="26.0" prefWidth="100.0" text="Technical Issue" />
+            <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#equipmentButtonOnAction" text="Equipment" />
+            <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#maintenanceStaffButtonOnAction" text="Maintenance Staff" />
+            <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#emergencyRepairButtonOnAction" text="Emergency Repair" />
+            <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#maintenanceHistoryButtonOnAction" text="Maintenance History" />
+            <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#sparePartsOrderButtonOnAction" text="Spare Parts Order" />
+            <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#completionRepairButtonOnAction" text="Completion Repair" />
+            <Button mnemonicParsing="false" onAction="#dashboardButtonOnAction" prefHeight="25.0" prefWidth="200.0" text="Dashboard" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="28.0" layoutY="36.0" text="User Name" />
+            <Label layoutX="28.0" layoutY="72.0" text="Phone No" />
+            <Label layoutX="28.0" layoutY="108.0" text="Email" />
+            <Label layoutX="197.0" layoutY="36.0" text="Label" />
+            <Label layoutX="197.0" layoutY="72.0" text="Label" />
+            <Label layoutX="197.0" layoutY="108.0" text="Label" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
