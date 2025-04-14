@@ -15,4 +15,62 @@ public class EventTicket {
 
     }
 
+    public EventTicket(String eventTicketId, String status, float price, String userId, String eventName) {
+        this.eventTicketId = eventTicketId;
+        Status = status;
+        Price = price;
+        UserId = userId;
+        EventName = eventName;
+    }
+
+    public String getEventTicketId() {
+        return eventTicketId;
+    }
+
+    public void setEventTicketId(String eventTicketId) {
+        this.eventTicketId = eventTicketId;
+    }
+
+    public String getEventName() {
+        return EventName;
+    }
+
+    public void setEventName(String eventName) {
+        EventName = eventName;
+    }
+
+    public String getUserId() {
+        return UserId;
+    }
+
+    public void setUserId(String userId) {
+        UserId = userId;
+    }
+
+    public float getPrice() {
+        return Price;
+    }
+
+    public void setPrice(float price) {
+        Price = price;
+    }
+
+    public String getStatus() {
+        return Status;
+    }
+
+    public void setStatus(String status) {
+        Status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "EventTicket{" +
+                "eventTicketId='" + eventTicketId + '\'' +
+                ", EventName='" + EventName + '\'' +
+                ", UserId='" + UserId + '\'' +
+                ", Price=" + Price +
+                ", Status='" + Status + '\'' +
+                '}';
+    }
 }
