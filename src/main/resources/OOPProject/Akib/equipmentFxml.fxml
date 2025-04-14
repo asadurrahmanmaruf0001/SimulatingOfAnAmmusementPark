@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.EquipmentFxml">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.EquipmentController">
    <children>
       <TextField fx:id="issueDescriptionTextField" layoutX="39.0" layoutY="85.0" promptText="Issue Description" />
       <ComboBox fx:id="affectedAreaComboBox" layoutX="39.0" layoutY="129.0" prefWidth="150.0" promptText="Affected Area" />

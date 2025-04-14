@@ -3,7 +3,7 @@ package OOPProject.Akib;
 import javafx.scene.control.*;
 import javafx.scene.control.TextField;
 
-public class MaintenanceTaskScheduleFxml
+public class MaintenanceTaskScheduleController
 {
     @javafx.fxml.FXML
     private Button submitButtonOnAction;

@@ -1,5 +1,6 @@
 package OOPProject;
 
+import OOPProject.Akib.DashboardController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -29,7 +30,10 @@ public class LoginFxml
     public void continueButtonOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/dashboardFxml.fxml"));
         Parent root = fxmlLoader.load();
-        Scene scene = new Scene(root);
+        DashboardController dc= fxmlLoader.getController();
+        dc.setter("akib", "2331454");
+
+        Scene scene = new Scene(root, 800, 400);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.setTitle("Maintenance Dashboard");
@@ -40,7 +44,14 @@ public class LoginFxml
 
     @javafx.fxml.FXML
     public void createAccountButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("createAccount.fxml"));
+//        FXMLLoader fxmlLoader = new FXMLLoader(LoginFxml.class.getResource("createAccountFxml.fxml"));
+//        Scene scene = new Scene(fxmlLoader.load());
+//        Stage stage= new Stage();
+//        stage.setTitle("Create Account!");
+//        stage.setScene(scene);
+//        stage.show();
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("createAccountFxml.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
@@ -51,9 +62,3 @@ public class LoginFxml
     }
 }
 
-//        FXMLLoader fxmlLoader = new FXMLLoader(LoginFxml.class.getResource("createAccountFxml.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load());
-//        Stage stage= new Stage();
-//        stage.setTitle("Create Account!");
-//        stage.setScene(scene);
-//        stage.show();

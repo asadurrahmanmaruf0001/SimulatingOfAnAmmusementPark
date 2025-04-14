@@ -2,20 +2,18 @@ package OOPProject.Akib;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class EquipmentFxml
-{
+public class VisitorEntryFxmlController {
     @javafx.fxml.FXML
-    private ComboBox affectedAreaComboBox;
+    private TextField nameTextField;
     @javafx.fxml.FXML
-    private TextField issueDescriptionTextField;
+    private ComboBox ticketIdComboBox;
     @javafx.fxml.FXML
-    private ComboBox priorityLevelComboBox;
-
+    private Label messageLabel;
     @javafx.fxml.FXML
-    public void initialize() {
-    }
+    private TextField purposeTextField;
 
     @javafx.fxml.FXML
     public void submitButtonOnAction(ActionEvent actionEvent) {

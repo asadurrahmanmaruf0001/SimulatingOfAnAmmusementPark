@@ -3,7 +3,7 @@ package OOPProject.Akib;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-public class MaintenanceHistoryFxml
+public class MaintenanceHistoryController
 {
     @javafx.fxml.FXML
     private DatePicker endDateDatePicker;

@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.maintenanceStaffDirectoryController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.maintenanceStaffController">
    <children>
       <Label layoutX="196.0" layoutY="31.0" text="Maintenance Staff">
          <font>
@@ -25,10 +24,10 @@
             <TableColumn fx:id="issueSeverityTableColumn" prefWidth="116.0" text="Issue Severity" />
         </columns>
       </TableView>
-      <ComboBox fx:id="selectMaintenanceStaffComboBox" layoutX="403.0" layoutY="78.0" prefHeight="26.0" prefWidth="182.0" promptText="Select Maintenance Staff " />
-      <DatePicker fx:id="taskDateDatePicker" layoutX="406.0" layoutY="188.0" prefHeight="26.0" prefWidth="182.0" promptText="Task Date" />
-      <Button layoutX="406.0" layoutY="253.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="182.0" text="Assign Staff" />
-      <TextField fx:id="filterBySkillsTextField" layoutX="406.0" layoutY="137.0" prefHeight="26.0" prefWidth="182.0" promptText="Filter By Skills" />
-      <Label fx:id="messageLabel" layoutX="405.0" layoutY="302.0" prefHeight="76.0" prefWidth="182.0" />
+      <ComboBox fx:id="selectMaintenanceStaffComboBox" layoutX="402.0" layoutY="78.0" prefHeight="26.0" prefWidth="182.0" promptText="Select Maintenance Staff " />
+      <DatePicker fx:id="taskDateDatePicker" layoutX="403.0" layoutY="158.0" prefHeight="26.0" prefWidth="182.0" promptText="Task Date" />
+      <Button layoutX="402.0" layoutY="240.0" mnemonicParsing="false" onAction="#assignStaffButtonOnAction" prefHeight="26.0" prefWidth="182.0" text="Assign Staff" />
+      <TextField fx:id="filterBySkillsTextField" layoutX="403.0" layoutY="117.0" prefHeight="26.0" prefWidth="182.0" promptText="Filter By Skills" />
+      <Label fx:id="messageLabel" layoutX="402.0" layoutY="290.0" prefHeight="76.0" prefWidth="182.0" />
    </children>
 </AnchorPane>
