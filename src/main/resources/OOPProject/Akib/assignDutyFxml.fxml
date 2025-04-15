@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.AssignDutyFxmlController">
+   <children>
+      <Label layoutX="232.0" layoutY="30.0" text="Assign Duty">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="97.0" text="Currently Selected Officer">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="securityTableView" layoutX="48.0" layoutY="86.0" prefHeight="251.0" prefWidth="234.0">
+        <columns>
+          <TableColumn fx:id="officerNameTableColumn" prefWidth="122.4000244140625" text="Officer Name" />
+          <TableColumn fx:id="assignedZoneTableColumn" prefWidth="108.79998779296875" text="Assigned Zone" />
+        </columns>
+      </TableView>
+      <Button layoutX="48.0" layoutY="350.0" mnemonicParsing="false" onAction="#assignButtonOnAction" prefHeight="26.0" prefWidth="234.0" text="Assign" />
+      <Label fx:id="selectedOfficerLabel" layoutX="466.0" layoutY="92.0" prefHeight="26.0" prefWidth="120.0" />
+      <TextField fx:id="dutyZoneTextField" layoutX="300.0" layoutY="141.0" promptText="Duty Zone" />
+      <Button layoutX="300.0" layoutY="188.0" mnemonicParsing="false" onAction="#notifyNotificationButtonOnAction" prefHeight="26.0" prefWidth="266.0" text=" Notify Confirmation" />
+      <Label fx:id="messageLabel" layoutX="300.0" layoutY="257.0" prefHeight="80.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>
