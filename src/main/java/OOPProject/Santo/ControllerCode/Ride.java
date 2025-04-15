@@ -14,6 +14,44 @@ public class Ride {
         this.status = false; // initially stopped
     }
 
+    @Override
+    public String toString() {
+        return "Ride{" +
+                "rideName='" + rideName + '\'' +
+                ", capacity=" + capacity +
+                ", duration=" + duration +
+                ", status=" + status +
+                '}';
+    }
+
+    public void setRideName(String rideName) {
+        this.rideName = rideName;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
     public void startRide() {
         status = true;
     }
