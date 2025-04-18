@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="463.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Santo.ManageRideOperationsController">
+   <children>
+      <Label fx:id="ManageRideOperationsText" layoutX="38.0" layoutY="36.0" text="Manage Ride Operations" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="35.0" layoutY="107.0" onAction="#RideTypeComboBox" prefWidth="150.0" promptText="Ride Type" />
+      <ComboBox layoutX="35.0" layoutY="70.0" onAction="#RideNAmeComboBox" prefWidth="150.0" promptText="Ride Name" />
+      <ComboBox layoutX="35.0" layoutY="146.0" onAction="#CapacityComboBox" prefWidth="150.0" promptText="Capacity" />
+      <Button layoutX="42.0" layoutY="209.0" mnemonicParsing="false" onAction="#AddRideButtonOnAction" prefHeight="26.0" prefWidth="100.0" text="Add Ride" />
+      <Button layoutX="41.0" layoutY="269.0" mnemonicParsing="false" onAction="#updateRideButtonOnAction" prefHeight="26.0" prefWidth="102.0" text="Update Ride" />
+      <Button layoutX="39.0" layoutY="325.0" mnemonicParsing="false" onAction="#RemoveRideButtonOnAction" prefHeight="26.0" prefWidth="103.0" text="Remove Ride" />
+      <Button layoutX="38.0" layoutY="380.0" mnemonicParsing="false" onAction="#GenerateReportButtonOnAction" text="Generate Report" />
+      <TableView fx:id="tableView" layoutX="182.0" layoutY="206.0" prefHeight="200.0" prefWidth="333.0">
+          <columns>
+              <TableColumn fx:id="rideNameColumn" onEditCancel="#RemoveRideButtonOnAction" onEditCommit="#updateRideButtonOnAction" onEditStart="#RideNAmeComboBox" prefWidth="104.80001831054688" text="Ride Name" />
+              <TableColumn fx:id="rideTypeColumn" onEditCancel="#RemoveRideButtonOnAction" onEditCommit="#updateRideButtonOnAction" onEditStart="#RideTypeComboBox" prefWidth="105.59996032714844" text="Ride Type" />
+              <TableColumn fx:id="capacityColumn" onEditCancel="#RemoveRideButtonOnAction" onEditCommit="#updateRideButtonOnAction" onEditStart="#CapacityComboBox" prefWidth="122.66668701171875" text="Ride Capacity" />
+          </columns>
+      </TableView>
+   </children>
+</AnchorPane>

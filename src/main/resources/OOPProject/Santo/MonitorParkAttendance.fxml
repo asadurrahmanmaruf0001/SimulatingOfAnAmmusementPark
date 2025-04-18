@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="BarChart" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Santo.MonitorParkAttendanceController">
+   <children>
+      <Label layoutX="43.0" layoutY="37.0" text="Monitor Park Attendance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNotificationMessage" layoutX="43.0" layoutY="81.0"/>
+      <Button layoutX="43.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnNotifyStaff" prefHeight="26.0" prefWidth="138.0" text="Notify Staff" />
+      <Button layoutX="42.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnAnalyzeTrends" prefHeight="26.0" prefWidth="138.0" text="Analyze Trends" />
+      <Button layoutX="43.0" layoutY="268.0" mnemonicParsing="false" onAction="#btnUpdateCapacityLimits" text="Update Capacity Limits" />
+      <BarChart layoutX="253.0" layoutY="94.0" prefHeight="212.0" prefWidth="304.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
