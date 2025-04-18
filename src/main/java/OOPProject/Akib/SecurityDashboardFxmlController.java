@@ -25,7 +25,7 @@ public class SecurityDashboardFxmlController {
 
     @javafx.fxml.FXML
     public void activeAlarmsButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/activeAlermsFxml.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/activeAlarmsFxml.fxml"));
         Parent root = fxmlLoader.load();
         securityBorderPane.setCenter(root);
     }
@@ -53,7 +53,7 @@ public class SecurityDashboardFxmlController {
 
     @javafx.fxml.FXML
     public void emergencyProtocolButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/emergencyProtocolsFxml.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/emergencyProtocolFxml.fxml"));
         Parent root = fxmlLoader.load();
         securityBorderPane.setCenter(root);
     }
