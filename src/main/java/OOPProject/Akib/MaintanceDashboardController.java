@@ -64,7 +64,7 @@ public class MaintanceDashboardController {
 
     @javafx.fxml.FXML
     public void dashboardButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/MaintananceDashboardFxml.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/maintenanceDesign.fxml"));
         Parent root = fxmlLoader.load();
         bpBorderPane.setCenter(root);
     }
