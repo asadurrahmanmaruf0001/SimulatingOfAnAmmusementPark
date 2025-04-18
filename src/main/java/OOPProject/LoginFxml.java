@@ -112,6 +112,7 @@ public class LoginFxml
 //
 //
 //    @javafx.fxml.FXML
+    @javafx.fxml.FXML
     public void createAccountButtonOnAction(ActionEvent actionEvent) throws IOException {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("createAccountFxml.fxml"));
