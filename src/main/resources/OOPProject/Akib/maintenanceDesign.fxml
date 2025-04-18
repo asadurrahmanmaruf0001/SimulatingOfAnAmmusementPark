@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.MaintenanceDesign">
    <children>
       <Label layoutX="162.0" layoutY="36.0" text="Maintenance Dashboard">
@@ -19,7 +18,7 @@
       <Label layoutX="56.0" layoutY="169.0" text="Duty:" />
       <Label layoutX="121.0" layoutY="169.0" text="Maintenance Officer" />
       <Label layoutX="56.0" layoutY="212.0" text="ID:" />
-      <Label layoutX="121.0" layoutY="212.0" text="1223456" />
+      <Label layoutX="121.0" layoutY="212.0" text="12234567" />
       <Label layoutX="48.0" layoutY="253.0" text="Password" />
       <Label layoutX="121.0" layoutY="253.0" text="akib2331454" />
       <TableView fx:id="WorkTableView" layoutX="252.0" layoutY="112.0" prefHeight="200.0" prefWidth="330.0">

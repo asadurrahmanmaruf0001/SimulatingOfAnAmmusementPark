@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.SecurityDashboardDesignController">
+   <children>
+      <Label layoutX="148.0" layoutY="26.0" text="Security Officer Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="79.0" text="Name:" />
+      <Label layoutX="82.0" layoutY="79.0" text="Akib Noor Hassan" />
+      <Label layoutX="19.0" layoutY="129.0" text="ID:" />
+      <Label layoutX="80.0" layoutY="129.0" text="123456" />
+      <Label layoutX="17.0" layoutY="183.0" text="Password:" />
+      <Label layoutX="77.0" layoutY="183.0" text="akib2331454" />
+      <Label layoutX="12.0" layoutY="245.0" text="Duty:" />
+      <Label layoutX="70.0" layoutY="245.0" text="Security Officer" />
+      <TableView fx:id="securityTableView" layoutX="195.0" layoutY="79.0" prefHeight="295.0" prefWidth="390.0">
+        <columns>
+          <TableColumn fx:id="weekdayTableColumn" prefWidth="75.20001220703125" text="Weekday" />
+          <TableColumn fx:id="timeTableColumn" prefWidth="160.79998779296875" text="Time" />
+            <TableColumn fx:id="repairListTableColumn" prefWidth="149.60009765625" text="Repair List" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

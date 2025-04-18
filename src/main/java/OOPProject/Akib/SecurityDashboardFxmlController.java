@@ -67,6 +67,9 @@ public class SecurityDashboardFxmlController {
 
     @javafx.fxml.FXML
     public void dashboardButtonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/securityDashboardDesign.fxml"));
+        Parent root = fxmlLoader.load();
+        securityBorderPane.setCenter(root);
 
     }
 
