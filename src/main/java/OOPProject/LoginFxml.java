@@ -23,69 +23,76 @@ public class LoginFxml
     @javafx.fxml.FXML
     private Label showPasswordLabel;
 
-    private final String securityOfficerID = "123456";
-    private final String securityOfficerPassword = "Akib2331454";
 
-    private final String maintenanceOfficerID = "1234567";
-    private final String maintenanceOfficerPassword = "Hassan2331454";
 
     private final ArrayList<String> loginAttempts = new ArrayList<>();
 
     @javafx.fxml.FXML
     public void initialize() {
-        showPasswordCheckBox.setOnAction(e -> {
-            if (showPasswordCheckBox.isSelected()) {
-                showPasswordLabel.setText(passwordPasswordField.getText());
-            } else {
-                showPasswordLabel.setText("");
-            }
-        });
-
-        passwordPasswordField.textProperty().addListener((obs, oldText, newText) -> {
-            if (showPasswordCheckBox.isSelected()) {
-                showPasswordLabel.setText(newText);
-            }
-        });
-
 
     }
 
     @javafx.fxml.FXML
     public void continueButtonOnAction(ActionEvent actionEvent) throws IOException {
+        String userID = userIDTextField.getText();
+        String password = passwordPasswordField.getText();
 
-        String userID = userIDTextField.getText().trim();
-        String password = passwordPasswordField.getText().trim();
+        // Store login attempt
+        loginAttempts.add("ID: " + userID + ", Password: " + password);
 
-        loginAttempts.add("Tried: " + userID);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        Scene scene;
+        FXMLLoader fxmlLoader;
+        Parent root;
 
-        if (userID.equals(securityOfficerID) && password.equals(securityOfficerPassword)) {
+        if (userID.equals("123456") && password.equals("akib2331454")) {
             // Load Security Officer Dashboard
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("securityOfficerDashboard.fxml"));
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
-            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/SecurityDashboardFxml.fxml"));
+            root = fxmlLoader.load();
+            scene = new Scene(root, 800, 400);
             stage.setScene(scene);
-            stage.setTitle("Security Officer Dashboard");
+            stage.setTitle("Security Dashboard");
             stage.show();
 
-        } else if (userID.equals(maintenanceOfficerID) && password.equals(maintenanceOfficerPassword)) {
+        } else if (userID.equals("1234567") && password.equals("akib2331454")) {
             // Load Maintenance Officer Dashboard
-            FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/MaintananceDashboardFxml.fxml"));
-            Parent root = fxmlLoader.load();
-            MaintanceDashboardController dc = fxmlLoader.getController();
-            dc.setter("akib", "2331454");
+            fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/MaintananceDashboardFxml.fxml"));
+            root = fxmlLoader.load();
 
-            Scene scene = new Scene(root, 800, 400);
-            Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+            // Set optional data to controller
+            MaintanceDashboardController controller = fxmlLoader.getController();
+            controller.setter("akib", "2331454");
+
+            scene = new Scene(root, 800, 400);
             stage.setScene(scene);
             stage.setTitle("Maintenance Dashboard");
             stage.show();
 
         } else {
-            showAlert("Login Failed", "Incorrect User ID or Password.");
-
+            // Invalid login
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Login Failed");
+            alert.setHeaderText("Invalid credentials");
+            alert.setContentText("Please check your ID and password.");
+            alert.showAndWait();
         }
+
+
+
     }
+//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/MaintananceDashboardFxml.fxml"));
+//        Parent root = fxmlLoader.load();
+//        MaintanceDashboardController dc= fxmlLoader.getController();
+//        dc.setter("akib", "2331454");
+//
+//        Scene scene = new Scene(root, 800, 400);
+//        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+//        stage.setScene(scene);
+//        stage.setTitle("Maintenance Dashboard");
+//        stage.show();
+
+
+//    }
 
 
 
@@ -112,20 +119,15 @@ public class LoginFxml
         Scene scene = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("Create Account");
+        stage.setTitle("Maintenance Dashboard");
         stage.show();
 
 
     }
 
 
-    private void showAlert(String title, String content) {
-        Alert alert = new Alert(Alert.AlertType.ERROR);
-        alert.setTitle(title);
-        alert.setHeaderText(null);
-        alert.setContentText(content);
-        alert.show();
-    }
+
+}
 ////        FXMLLoader fxmlLoader = new FXMLLoader(LoginFxml.class.getResource("createAccountFxml.fxml"));
 ////        Scene scene = new Scene(fxmlLoader.load());
 ////        Stage stage= new Stage();
@@ -142,5 +144,5 @@ public class LoginFxml
 //        stage.show();
 //
 //    }
-}
+
 
