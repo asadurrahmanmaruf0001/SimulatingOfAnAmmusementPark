@@ -1,6 +1,6 @@
 package OOPProject.Maruf;
 
-public class DemoController
+public class BuyTicketController
 {
     @javafx.fxml.FXML
     public void initialize() {
