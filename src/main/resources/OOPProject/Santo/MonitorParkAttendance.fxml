@@ -9,15 +9,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="BarChart" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Santo.MonitorParkAttendanceController">
    <children>
-      <Label layoutX="43.0" layoutY="37.0" text="Monitor Park Attendance">
+      <Label fx:id="textlabel" layoutX="43.0" layoutY="37.0" text="Monitor Park Attendance">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtNotificationMessage" layoutX="43.0" layoutY="81.0"/>
+      <TextField fx:id="txtNotificationMessage" layoutX="43.0" layoutY="81.0" />
       <Button layoutX="43.0" layoutY="129.0" mnemonicParsing="false" onAction="#btnNotifyStaff" prefHeight="26.0" prefWidth="138.0" text="Notify Staff" />
       <Button layoutX="42.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnAnalyzeTrends" prefHeight="26.0" prefWidth="138.0" text="Analyze Trends" />
       <Button layoutX="43.0" layoutY="268.0" mnemonicParsing="false" onAction="#btnUpdateCapacityLimits" text="Update Capacity Limits" />
