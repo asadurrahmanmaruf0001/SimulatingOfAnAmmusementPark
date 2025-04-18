@@ -13,7 +13,7 @@ import java.io.IOException;
 public class CreateAccountFxml
 {
     @javafx.fxml.FXML
-    private ComboBox userTypeComboBox;
+    private ComboBox<String> userTypeComboBox;
     @javafx.fxml.FXML
     private TextField phoneNoTextField;
     @javafx.fxml.FXML

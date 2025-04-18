@@ -3,17 +3,13 @@ package OOPProject.Akib;
 import OOPProject.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 
 
-public class DashboardController {
+public class MaintanceDashboardController {
 
     @javafx.fxml.FXML
     private BorderPane bpBorderPane;
@@ -68,7 +64,7 @@ public class DashboardController {
 
     @javafx.fxml.FXML
     public void dashboardButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/dashboardFxml.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/MaintananceDashboardFxml.fxml"));
         Parent root = fxmlLoader.load();
         bpBorderPane.setCenter(root);
     }
