@@ -18,7 +18,7 @@
       </Label>
       <TextArea fx:id="descriptionFieldTextArea" layoutX="35.0" layoutY="87.0" prefHeight="78.0" prefWidth="317.0" promptText="Description Field" />
       <TextField fx:id="areaInvolvedTextField" layoutX="35.0" layoutY="182.0" prefHeight="35.0" prefWidth="224.0" promptText="Equipment or Area Involved" />
-      <ComboBox fx:id="priorityLevelComboBox" layoutX="35.0" layoutY="231.0" prefHeight="26.0" prefWidth="224.0" promptText="Select Priority Level" />
+      <ComboBox fx:id="priorityComboBox" layoutX="35.0" layoutY="231.0" prefHeight="26.0" prefWidth="224.0" promptText="Select Priority Level" />
       <Label fx:id="messageLabel" layoutX="35.0" layoutY="325.0" prefHeight="50.0" prefWidth="224.0" wrapText="true" />
    </children>
 </AnchorPane>
