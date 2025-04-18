@@ -83,6 +83,7 @@ public class LoginFxml
 
         } else {
             showAlert("Login Failed", "Incorrect User ID or Password.");
+
         }
     }
 
@@ -104,7 +105,27 @@ public class LoginFxml
 //
 //
 //    @javafx.fxml.FXML
-//    public void createAccountButtonOnAction(ActionEvent actionEvent) throws IOException {
+    public void createAccountButtonOnAction(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("createAccountFxml.fxml"));
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Create Account");
+        stage.show();
+
+
+    }
+
+
+    private void showAlert(String title, String content) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(content);
+        alert.show();
+    }
 ////        FXMLLoader fxmlLoader = new FXMLLoader(LoginFxml.class.getResource("createAccountFxml.fxml"));
 ////        Scene scene = new Scene(fxmlLoader.load());
 ////        Stage stage= new Stage();
