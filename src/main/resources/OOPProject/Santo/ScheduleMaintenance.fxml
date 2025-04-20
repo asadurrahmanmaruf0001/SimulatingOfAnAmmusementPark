@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Santo.ScheduleMaintenanceController">
+   <children>
+      <Label fx:id="ScheduleMaintenanceLabel" layoutX="53.0" layoutY="42.0" text="Schedule Maintenance">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="StaffNameTextField" layoutX="53.0" layoutY="92.0" text="Staff Name" />
+      <ComboBox layoutX="53.0" layoutY="141.0" onAction="#SelectRoleComboBox" prefWidth="150.0" promptText="Select Role" />
+      <Button layoutX="53.0" layoutY="188.0" mnemonicParsing="false" onAction="#btnHireStaff" prefHeight="26.0" prefWidth="131.0" text="Hire Staff" />
+      <Button layoutX="53.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnConductTraining" prefHeight="26.0" prefWidth="131.0" text="Conduct Training" />
+      <Button layoutX="53.0" layoutY="279.0" mnemonicParsing="false" onAction="#btnFireStaff" prefHeight="26.0" prefWidth="131.0" text="Fire Staff" />
+      <Button layoutX="53.0" layoutY="322.0" mnemonicParsing="false" onAction="#btnEvaluatePerformance" text="Evaluate Performance" />
+      <TableView fx:id="ReportTableView" layoutX="217.0" layoutY="146.0" onSort="#initialize" prefHeight="200.0" prefWidth="346.0">
+        <columns>
+          <TableColumn fx:id="StaffNameColumn" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="114.4000244140625" text="Staff Name" />
+            <TableColumn fx:id="RoleColumn" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="114.4000244140625" text="Role" />
+            <TableColumn fx:id="StatusColumn" onEditCancel="#initialize" onEditCommit="#initialize" onEditStart="#initialize" prefWidth="114.4000244140625" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

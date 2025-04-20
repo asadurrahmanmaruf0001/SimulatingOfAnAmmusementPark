@@ -1,4 +1,4 @@
 package OOPProject.Santo;
 
-public class SafetyCheck {
+public class TableView {
 }

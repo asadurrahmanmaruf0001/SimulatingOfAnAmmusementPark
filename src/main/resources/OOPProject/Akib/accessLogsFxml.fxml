@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.AccessLogsFxmlController">
    <children>
       <Label layoutX="233.0" layoutY="35.0" text="Access Logs">
@@ -18,11 +17,11 @@
          </font>
       </Label>
       <Label fx:id="messageLabel" layoutX="343.0" layoutY="272.0" prefHeight="102.0" prefWidth="175.0" wrapText="true" />
-      <TableView fx:id="accessLogsTableView" layoutX="28.0" layoutY="81.0" prefHeight="200.0" prefWidth="278.0">
+      <TableView fx:id="accessLogsTableView" layoutX="28.0" layoutY="81.0" prefHeight="200.0" prefWidth="300.0">
         <columns>
           <TableColumn fx:id="nameTableColumn" prefWidth="116.79998779296875" text="Name" />
-          <TableColumn fx:id="entryTimeTableColumn" prefWidth="76.0" text="Entry Time" />
-            <TableColumn fx:id="locationTableColumn" prefWidth="82.4000244140625" text="Location" />
+          <TableColumn fx:id="entryTimeTableColumn" prefWidth="97.60003662109375" text="Entry Time" />
+            <TableColumn fx:id="locationTableColumn" prefWidth="85.5999755859375" text="Location" />
         </columns>
       </TableView>
       <DatePicker fx:id="selectDateDatePicker" layoutX="343.0" layoutY="123.0" promptText="Select Date" />

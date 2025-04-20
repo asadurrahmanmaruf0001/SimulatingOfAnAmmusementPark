@@ -13,20 +13,20 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.CreateAccountFxml">
    <children>
-      <TextField fx:id="fullNameTextField" layoutX="42.0" layoutY="67.0" promptText="Full Name" />
-      <TextField fx:id="phoneNoTextField" layoutX="43.0" layoutY="120.0" promptText="Phone No" />
-      <TextField fx:id="emailTextField" layoutX="43.0" layoutY="175.0" promptText="Email" />
-      <ComboBox fx:id="userTypeComboBox" layoutX="234.0" layoutY="67.0" prefWidth="150.0" promptText="User Type" />
-      <DatePicker fx:id="dateOfBirthDatePicker" layoutX="234.0" layoutY="120.0" prefHeight="26.0" prefWidth="150.0" promptText="Date Of Birth" />
-      <PasswordField fx:id="passwordPasswordField" layoutX="235.0" layoutY="175.0" promptText="Password" />
-      <TextArea fx:id="addressTextArea" layoutX="408.0" layoutY="67.0" prefHeight="134.0" prefWidth="162.0" promptText="Address" />
-      <Label layoutX="223.0" layoutY="14.0" text="Create Account">
+      <ComboBox fx:id="userTypeComboBox" layoutX="38.0" layoutY="66.0" prefWidth="150.0" promptText="User Type" />
+      <TextField fx:id="fullNameTextField" layoutX="38.0" layoutY="99.0" promptText="Full Name" />
+      <DatePicker fx:id="dateOfBirthDatePicker" layoutX="40.0" layoutY="132.0" prefHeight="26.0" prefWidth="150.0" promptText="Select Date" />
+      <TextField fx:id="emailTextField" layoutX="40.0" layoutY="167.0" promptText="Email" />
+      <PasswordField fx:id="passwordPasswordField" layoutX="40.0" layoutY="200.0" promptText="Password" />
+      <TextField fx:id="phoneNoTextField" layoutX="40.0" layoutY="232.0" promptText="Phone Number" />
+      <TextArea fx:id="addressTextArea" layoutX="40.0" layoutY="263.0" prefHeight="86.0" prefWidth="200.0" promptText="Address" wrapText="true" />
+      <TextArea fx:id="showOutputTextArea" layoutX="300.0" layoutY="193.0" prefHeight="155.0" prefWidth="278.0" promptText="Output" wrapText="true" />
+      <Button layoutX="502.0" layoutY="359.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="26.0" prefWidth="76.0" style="-fx-background-color: Skyblue;" text="Login" />
+      <Button layoutX="40.0" layoutY="359.0" mnemonicParsing="false" onAction="#createAccountButtonOnAction" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: skyblue;" text="Create Button" />
+      <Label layoutX="213.0" layoutY="21.0" prefHeight="35.0" prefWidth="174.0" text="Create Account">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextArea fx:id="showOutputTextArea" layoutX="192.0" layoutY="277.0" prefHeight="97.0" prefWidth="200.0" promptText="Show Output" />
-      <Button layoutX="260.0" layoutY="223.0" mnemonicParsing="false" onAction="#createAccountButtonOnAction" text="Create Account" />
-      <Button layoutX="489.0" layoutY="349.0" mnemonicParsing="false" onAction="#loginButtonOnAction" text="Login" />
    </children>
 </AnchorPane>

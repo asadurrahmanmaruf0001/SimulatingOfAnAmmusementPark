@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.EquipmentController">
    <children>
-      <TextField fx:id="issueDescriptionTextField" layoutX="39.0" layoutY="85.0" promptText="Issue Description" />
-      <ComboBox fx:id="affectedAreaComboBox" layoutX="39.0" layoutY="129.0" prefWidth="150.0" promptText="Affected Area" />
-      <ComboBox fx:id="priorityLevelComboBox" layoutX="39.0" layoutY="174.0" prefWidth="150.0" promptText="Priority Level" />
-      <Button layoutX="38.0" layoutY="251.0" mnemonicParsing="false" onAction="#submitButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: skyblue;" text="Submit" textFill="#010610" />
+      <Button layoutX="45.0" layoutY="359.0" mnemonicParsing="false" onAction="#filterButtonOnAction" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: skyblue;" text="Filter" textFill="#010610" />
       <Label layoutX="238.0" layoutY="30.0" text="Equipment">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
+      <TableView fx:id="equipmentTableView" layoutX="45.0" layoutY="65.0" prefHeight="200.0" prefWidth="519.0">
+        <columns>
+          <TableColumn fx:id="equipmentIDTableColumn" prefWidth="81.60003662109375" text="Equipment ID" />
+          <TableColumn fx:id="equipmentNameTableColumn" prefWidth="104.79998779296875" text="Equipment Name" />
+            <TableColumn fx:id="usageHistoryTableColumn" prefWidth="84.0" text="Usage History" />
+            <TableColumn fx:id="lastMaintenanceDateTableColumn" prefWidth="145.60003662109375" text="Last Maintenance Date" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="99.199951171875" text="Status" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="StartDatePicker" layoutX="45.0" layoutY="281.0" prefHeight="26.0" prefWidth="142.0" promptText="Start Date" />
+      <DatePicker fx:id="endDatePicker" layoutX="45.0" layoutY="324.0" prefHeight="26.0" prefWidth="142.0" promptText="End Date" />
+      <Button layoutX="376.0" layoutY="281.0" mnemonicParsing="false" onAction="#reportButtonOnAction" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: skyblue;" text="Report" />
+      <Label fx:id="messageLabel" layoutX="376.0" layoutY="318.0" prefHeight="63.0" prefWidth="192.0" textAlignment="CENTER" wrapText="true" />
    </children>
 </AnchorPane>

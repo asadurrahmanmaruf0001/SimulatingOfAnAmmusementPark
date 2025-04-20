@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Akib.MaintenanceDesign">
+   <children>
+      <Label layoutX="162.0" layoutY="36.0" text="Maintenance Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="120.0" text="Akib Noor Hassan" />
+      <Label layoutX="56.0" layoutY="120.0" text="Name:" />
+      <Label layoutX="56.0" layoutY="169.0" text="Duty:" />
+      <Label layoutX="121.0" layoutY="169.0" text="Maintenance Officer" />
+      <Label layoutX="56.0" layoutY="212.0" text="ID:" />
+      <Label layoutX="121.0" layoutY="212.0" text="12234567" />
+      <Label layoutX="48.0" layoutY="253.0" text="Password" />
+      <Label layoutX="121.0" layoutY="253.0" text="akib2331454" />
+      <TableView fx:id="WorkTableView" layoutX="252.0" layoutY="112.0" prefHeight="200.0" prefWidth="330.0">
+        <columns>
+          <TableColumn fx:id="weekdayTableColumn" prefWidth="113.60003662109375" text="WeekDay" />
+          <TableColumn fx:id="timeTableColumn" prefWidth="108.79998779296875" text="Time" />
+            <TableColumn fx:id="repairListTableColumn" prefWidth="106.39999999999998" text="Repair List" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
