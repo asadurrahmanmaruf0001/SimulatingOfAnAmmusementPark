@@ -6,6 +6,7 @@ module com.example.demo2 {
 
     opens OOPProject to javafx.fxml;
     opens OOPProject.Akib to javafx.fxml;
+    opens OOPProject.Maruf to javafx.fxml;
     exports OOPProject;
     exports OOPProject.Akib;
 }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pvBoarder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Maruf.ParkVsiitorDashboardController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Dashboard" />
+            <Button mnemonicParsing="false" onAction="#buyTicketOnAction" prefHeight="25.0" prefWidth="100.0" text="Buy Ticket" />
+            <Button mnemonicParsing="false" onAction="#rideStatusOnAction" prefHeight="25.0" prefWidth="100.0" text="Ride Status" />
+            <Button mnemonicParsing="false" onAction="#parkMapOnAction" prefHeight="25.0" prefWidth="100.0" text="Park Map" />
+            <Button mnemonicParsing="false" onAction="#myTicketOnAction" prefHeight="25.0" prefWidth="100.0" text="My ticket" />
+            <Button mnemonicParsing="false" onAction="#entryRuleOnAction" prefHeight="25.0" prefWidth="100.0" text="Entry Rule" />
+            <Button mnemonicParsing="false" onAction="#bookTableOnAction" prefHeight="25.0" prefWidth="100.0" text="Book Table" />
+            <Button mnemonicParsing="false" onAction="#rideWaitTimeOnAction" prefHeight="25.0" prefWidth="100.0" text="Ride Wait Time" />
+            <Button mnemonicParsing="false" onAction="#feedbackOnAction" prefHeight="25.0" prefWidth="100.0" text="Feedback" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="120.0" layoutY="22.0" text="Park Visitor Dashboard">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
