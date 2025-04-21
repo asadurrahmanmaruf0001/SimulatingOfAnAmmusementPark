@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Maruf.CheckRideAvailabilityController">
+   <children>
+      <Label layoutX="204.0" layoutY="31.0" prefHeight="34.0" prefWidth="193.0" text="Ride Available">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="RideTableView" layoutX="149.0" layoutY="84.0" prefHeight="200.0" prefWidth="275.0">
+        <columns>
+          <TableColumn fx:id="rideNameCol" prefWidth="91.0" text="Ride name" />
+          <TableColumn fx:id="statusCol" prefWidth="98.0" text="Ride status" />
+            <TableColumn fx:id="waitTimeCol" prefWidth="85.0" text="wait time" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="rideDetailArea" layoutX="77.0" layoutY="292.0" prefHeight="72.0" prefWidth="419.0" />
+   </children>
+</AnchorPane>

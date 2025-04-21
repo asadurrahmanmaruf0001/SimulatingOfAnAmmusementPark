@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.LogRideOperationsController">
+    <children>
+        <Label text="Log Ride Operations" layoutX="14.0" layoutY="14.0" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <Label text="Select Ride:" layoutX="14.0" layoutY="50.0"/>
+        <ComboBox fx:id="rideComboBox" layoutX="120.0" layoutY="46.0" />
+
+        <Label text="Start Time:" layoutX="14.0" layoutY="90.0"/>
+        <TextField fx:id="startTimeField" layoutX="120.0" layoutY="86.0" />
+
+        <Label text="End Time:" layoutX="14.0" layoutY="130.0"/>
+        <TextField fx:id="endTimeField" layoutX="120.0" layoutY="126.0" />
+
+        <Label text="Issues Encountered:" layoutX="14.0" layoutY="170.0"/>
+        <TextArea fx:id="issuesArea" layoutX="14.0" layoutY="190.0" prefHeight="100.0" prefWidth="300.0" />
+
+        <Button text="Save Log" layoutX="14.0" layoutY="300.0" onAction="#handleSaveLog"/>
+        <Button text="Generate Summary Report" layoutX="120.0" layoutY="300.0" onAction="#handleGenerateReport"/>
+
+        <Label text="Log Status:" layoutX="14.0" layoutY="340.0"/>
+        <TextArea fx:id="logStatusArea" layoutX="14.0" layoutY="360.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+    </children>
+</AnchorPane>

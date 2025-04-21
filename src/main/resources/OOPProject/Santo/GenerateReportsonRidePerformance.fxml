@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.GenerateReportsonRidePerformanceController">
+   <children>
+      <Label text="Generate Reports on Ride Performance" layoutX="14.0" layoutY="14.0" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+      <Label text="Daily Attendance Report:" layoutX="14.0" layoutY="50.0"/>
+      <Button text="Generate Attendance Report" layoutX="14.0" layoutY="70.0" onAction="#handleGenerateAttendanceReport"/>
+
+      <Label text="Revenue Report:" layoutX="14.0" layoutY="110.0"/>
+      <Button text="Generate Revenue Report" layoutX="14.0" layoutY="130.0" onAction="#handleGenerateRevenueReport"/>
+
+      <Label text="Generated Report:" layoutX="14.0" layoutY="170.0"/>
+      <TextArea fx:id="reportArea" layoutX="14.0" layoutY="190.0" prefHeight="200.0" prefWidth="400.0" editable="false" />
+
+      <Button text="Save Report" layoutX="14.0" layoutY="400.0" onAction="#handleSaveReport"/>
+
+      <Label text="Status:" layoutX="14.0" layoutY="440.0"/>
+      <TextArea fx:id="statusArea" layoutX="14.0" layoutY="460.0" prefHeight="100.0" prefWidth="400.0" editable="false" />
+   </children>
+</AnchorPane>

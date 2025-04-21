@@ -1,6 +1,8 @@
 package OOPProject.Santo.ControllerCode;
 
 public class ManageRideOperations {
+
+
     private String rideName;
     private String rideType;
     private int capacity;

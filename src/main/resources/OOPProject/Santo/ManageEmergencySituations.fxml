@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.ManageEmergencySituationsController">
+    <children>
+        <Label text="Emergency Alert:" layoutX="14.0" layoutY="14.0"/>
+        <TextArea fx:id="emergencyAlertArea" layoutX="14.0" layoutY="40.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Label text="Emergency Details:" layoutX="14.0" layoutY="150.0"/>
+        <TextArea fx:id="emergencyDetailsArea" layoutX="14.0" layoutY="180.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Button text="Notify Staff" layoutX="14.0" layoutY="300.0" onAction="#handleNotifyStaff"/>
+        <Button text="Initiate Protocol" layoutX="120.0" layoutY="300.0" onAction="#handleInitiateProtocol"/>
+        <Button text="Log Incident" layoutX="240.0" layoutY="300.0" onAction="#handleLogIncident"/>
+
+        <Label text="Log Output:" layoutX="14.0" layoutY="350.0"/>
+        <TextArea fx:id="logOutputArea" layoutX="14.0" layoutY="380.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+    </children>
+</AnchorPane>

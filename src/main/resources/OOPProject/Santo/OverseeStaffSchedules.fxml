@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.OverseeStaffSchedulesController">
+    <children>
+        <Label text="Select Staff:" layoutX="14.0" layoutY="14.0"/>
+        <ComboBox fx:id="staffComboBox" layoutX="120.0" layoutY="10.0" />
+
+        <Label text="Assign Shift:" layoutX="14.0" layoutY="50.0"/>
+        <TextField fx:id="shiftField" layoutX="120.0" layoutY="46.0" />
+
+        <Button text="Assign Shift" layoutX="14.0" layoutY="86.0" onAction="#handleAssignShift"/>
+
+        <Label text="Shift Conflicts:" layoutX="14.0" layoutY="120.0"/>
+        <TextArea fx:id="conflictArea" layoutX="14.0" layoutY="150.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Button text="Save Schedule" layoutX="14.0" layoutY="260.0" onAction="#handleSaveSchedule"/>
+
+        <Label text="Full Staff Schedule:" layoutX="14.0" layoutY="300.0"/>
+        <TextArea fx:id="scheduleArea" layoutX="14.0" layoutY="330.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+    </children>
+</AnchorPane>

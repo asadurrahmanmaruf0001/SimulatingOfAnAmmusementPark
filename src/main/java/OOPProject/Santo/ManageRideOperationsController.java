@@ -1,53 +1,101 @@
 package OOPProject.Santo;
 
-import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-import javax.swing.table.TableColumn;
+public class ManageRideOperationsController {
 
-public class ManageRideOperationsController
-{
-    @javafx.fxml.FXML
-    private TableColumn capacityColumn;
-    @javafx.fxml.FXML
-    private TableColumn rideNameColumn;
-    @javafx.fxml.FXML
-    private TableColumn rideTypeColumn;
-    @javafx.fxml.FXML
-    private Label ManageRideOperationsText;
-    @javafx.fxml.FXML
-    private TableView tableView;
+    @FXML
+    private TextField rideNameField;
+    @FXML
+    private TextField rideTypeField;
+    @FXML
+    private TextField capacityField;
+    @FXML
+    private TextArea statusArea;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    private void handleAddRide() {
+        String rideName = rideNameField.getText();
+        String rideType = rideTypeField.getText();
+        String capacityText = capacityField.getText();
+
+        if (rideName.isEmpty() || rideType.isEmpty() || capacityText.isEmpty()) {
+            statusArea.setText("Error: Please fill in all fields.");
+            return;
+        }
+
+        // Validate capacity is a number
+        int capacity;
+        try {
+            capacity = Integer.parseInt(capacityText);
+        } catch (NumberFormatException e) {
+            statusArea.setText("Error: Capacity must be a valid number.");
+            return;
+        }
+
+        // Logic to add the ride to the system (placeholder)
+        // For example: addRideToDatabase(rideName, rideType, capacity);
+
+        statusArea.setText("Ride added successfully: " + rideName + " (" + rideType + ") with capacity " + capacity + ".");
+        clearFields();
     }
 
-    @javafx.fxml.FXML
-    public void updateRideButtonOnAction(ActionEvent actionEvent) {
+    @FXML
+    private void handleUpdateRide() {
+        String rideName = rideNameField.getText();
+        String rideType = rideTypeField.getText();
+        String capacityText = capacityField.getText();
+
+        if (rideName.isEmpty() || rideType.isEmpty() || capacityText.isEmpty()) {
+            statusArea.setText("Error: Please fill in all fields.");
+            return;
+        }
+
+        // Validate capacity is a number
+        int capacity;
+        try {
+            capacity = Integer.parseInt(capacityText);
+        } catch (NumberFormatException e) {
+            statusArea.setText("Error: Capacity must be a valid number.");
+            return;
+        }
+
+        // Logic to update the ride in the system (placeholder)
+        // For example: updateRideInDatabase(rideName, rideType, capacity);
+
+        statusArea.setText("Ride updated successfully: " + rideName + " (" + rideType + ") with capacity " + capacity + ".");
+        clearFields();
     }
 
-    @javafx.fxml.FXML
-    public void RideTypeComboBox(ActionEvent actionEvent) {
+    @FXML
+    private void handleRemoveRide() {
+        String rideName = rideNameField.getText();
+
+        if (rideName.isEmpty()) {
+            statusArea.setText("Error: Please enter the ride name to remove.");
+            return;
+        }
+
+        // Logic to remove the ride from the system (placeholder)
+        // For example: removeRideFromDatabase(rideName);
+
+        statusArea.setText("Ride removed successfully: " + rideName + ".");
+        clearFields();
     }
 
-    @javafx.fxml.FXML
-    public void RemoveRideButtonOnAction(ActionEvent actionEvent) {
+    @FXML
+    private void handleGenerateReport() {
+        // Logic to generate a report on ride performance (placeholder)
+        // For example: generateRideReport();
+
+        statusArea.setText("Ride report generated successfully.");
     }
 
-    @javafx.fxml.FXML
-    public void GenerateReportButtonOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void AddRideButtonOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void RideNAmeComboBox(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void CapacityComboBox(ActionEvent actionEvent) {
+    private void clearFields() {
+        rideNameField.clear();
+        rideTypeField.clear();
+        capacityField.clear();
     }
 }

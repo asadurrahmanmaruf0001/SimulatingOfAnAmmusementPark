@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.StartStopRidesController">
+    <children>
+        <Label text="Select Ride:" layoutX="14.0" layoutY="14.0"/>
+        <ComboBox fx:id="rideComboBox" layoutX="120.0" layoutY="10.0" />
+
+        <Button text="Perform Safety Check" layoutX="14.0" layoutY="50.0" onAction="#handleSafetyCheck"/>
+
+        <Label text="Safety Check Status:" layoutX="14.0" layoutY="90.0"/>
+        <TextArea fx:id="safetyCheckArea" layoutX="14.0" layoutY="120.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Button text="Start Ride" layoutX="14.0" layoutY="230.0" onAction="#handleStartRide"/>
+        <Button text="Stop Ride" layoutX="120.0" layoutY="230.0" onAction="#handleStopRide"/>
+
+        <Label text="Operation Log:" layoutX="14.0" layoutY="270.0"/>
+        <TextArea fx:id="operationLogArea" layoutX="14.0" layoutY="300.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+    </children>
+</AnchorPane>
