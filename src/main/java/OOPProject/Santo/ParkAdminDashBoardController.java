@@ -32,7 +32,7 @@ public class ParkAdminDashBoardController {
 
     @javafx.fxml.FXML
     public void ScheduleMaintenanceforRidesOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/ScheduleMaintenanceforRides.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/ScheduleMaintenance.fxml"));
         Parent root = fxmlLoader.load();
         paBoarder.setCenter(root);
     }

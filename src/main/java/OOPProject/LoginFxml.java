@@ -93,6 +93,32 @@ public class LoginFxml
             stage.show();
         }
 
+        else if (userID.equals("123456") && password.equals("Santo123")) {
+
+            fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/ParkAdminDashBoard.fxml"));
+            root = fxmlLoader.load();
+
+
+            scene = new Scene(root, 800, 400);
+            stage.setScene(scene);
+            stage.setTitle("Park Visitor Dashboard");
+            stage.show();
+
+        }
+
+        else if (userID.equals("234567") && password.equals("Santo123")) {
+
+            fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/RideOperatorDashBoard.fxml"));
+            root = fxmlLoader.load();
+
+
+            scene = new Scene(root, 800, 400);
+            stage.setScene(scene);
+            stage.setTitle("Park Visitor Dashboard");
+            stage.show();
+
+        }
+
 
         else {
 
