@@ -178,7 +178,20 @@ public class LoginFxml
     }
 
 
+    @javafx.fxml.FXML
+    public void showPasswordButtonOnAction(ActionEvent actionEvent) {
 
+        if (showPasswordCheckBox.isSelected()) {
+
+            String password = passwordPasswordField.getText();
+            showPasswordLabel.setText(password);
+            showPasswordLabel.setOpacity(100);
+        } else {
+            showPasswordLabel.setText("");
+            showPasswordLabel.setOpacity(0);
+
+        }
+    }
 }
 ////        FXMLLoader fxmlLoader = new FXMLLoader(LoginFxml.class.getResource("createAccountFxml.fxml"));
 ////        Scene scene = new Scene(fxmlLoader.load());

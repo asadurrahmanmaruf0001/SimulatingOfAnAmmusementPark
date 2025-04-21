@@ -48,5 +48,8 @@ public class CreateAccountFxml
 
     @javafx.fxml.FXML
     public void createAccountButtonOnAction(ActionEvent actionEvent) {
-    }
+        showOutputTextArea.setText("ID CREATED!!");
+
+
+        }
 }

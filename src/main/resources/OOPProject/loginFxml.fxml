@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.LoginFxml">
    <children>
       <Label layoutX="268.0" layoutY="22.0" text="Login">
@@ -18,7 +17,7 @@
       </Label>
       <TextField fx:id="userIDTextField" layoutX="225.0" layoutY="90.0" promptText="User ID" />
       <PasswordField fx:id="passwordPasswordField" layoutX="225.0" layoutY="143.0" promptText="Password" />
-      <CheckBox fx:id="showPasswordCheckBox" layoutX="300.0" layoutY="182.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox fx:id="showPasswordCheckBox" layoutX="268.0" layoutY="181.0" mnemonicParsing="false" onAction="#showPasswordButtonOnAction" text="Show Password" />
       <Label fx:id="showPasswordLabel" layoutX="224.0" layoutY="316.0" prefHeight="35.0" prefWidth="150.0" textAlignment="CENTER" />
       <Button layoutX="225.0" layoutY="221.0" mnemonicParsing="false" onAction="#continueButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: skyblue;" text="Continue" />
       <Button layoutX="413.0" layoutY="338.0" mnemonicParsing="false" onAction="#createAccountButtonOnAction" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: skyblue;" text="Create Account" />
