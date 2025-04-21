@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.ManageQueueSystemController">
+    <children>
+        <Label text="Ride Queue Management" layoutX="14.0" layoutY="14.0" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <Label text="Select Ride:" layoutX="14.0" layoutY="50.0"/>
+        <ComboBox fx:id="rideComboBox" layoutX="120.0" layoutY="46.0" />
+
+        <Label text="Current Wait Time (minutes):" layoutX="14.0" layoutY="90.0"/>
+        <TextField fx:id="waitTimeField" layoutX="180.0" layoutY="86.0" />
+
+        <Button text="Update Wait Time" layoutX="14.0" layoutY="130.0" onAction="#handleUpdateWaitTime"/>
+
+        <Label text="Display Updated Wait Times:" layoutX="14.0" layoutY="170.0"/>
+        <TextArea fx:id="waitTimeDisplayArea" layoutX="14.0" layoutY="190.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Label text="Current Queue Count:" layoutX="14.0" layoutY="300.0"/>
+        <TextField fx:id="queueCountField" layoutX="180.0" layoutY="296.0" />
+
+        <Button text="Validate Capacity" layoutX="14.0" layoutY="340.0" onAction="#handleValidateCapacity"/>
+
+        <Button text="Log Hourly Queue Data" layoutX="14.0" layoutY="380.0" onAction="#handleLogQueueData"/>
+
+        <Label text="Log Status:" layoutX="14.0" layoutY="420.0"/>
+        <TextArea fx:id="logStatusArea" layoutX="14.0" layoutY="440.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+    </children>
+</AnchorPane>

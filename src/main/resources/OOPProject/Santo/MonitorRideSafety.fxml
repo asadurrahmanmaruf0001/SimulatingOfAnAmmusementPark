@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.MonitorRideSafetyController">
+    <children>
+        <Label text="Safety Monitoring Dashboard" layoutX="14.0" layoutY="14.0" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <Label text="Safety Indicators:" layoutX="14.0" layoutY="50.0"/>
+        <TextArea fx:id="safetyIndicatorsArea" layoutX="14.0" layoutY="70.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Button text="Check Safety Indicators" layoutX="14.0" layoutY="180.0" onAction="#handleCheckIndicators"/>
+
+        <Label text="Report Safety Issues:" layoutX="14.0" layoutY="220.0"/>
+        <TextArea fx:id="issueReportArea" layoutX="14.0" layoutY="240.0" prefHeight="100.0" prefWidth="300.0" />
+
+        <Button text="Report Issue" layoutX="14.0" layoutY="350.0" onAction="#handleReportIssue"/>
+
+        <Label text="Safety Log:" layoutX="14.0" layoutY="390.0"/>
+        <TextArea fx:id="safetyLogArea" layoutX="14.0" layoutY="410.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+    </children>
+</AnchorPane>

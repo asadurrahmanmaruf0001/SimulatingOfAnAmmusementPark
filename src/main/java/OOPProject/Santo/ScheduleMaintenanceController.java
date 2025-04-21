@@ -1,55 +1,91 @@
 package OOPProject.Santo;
 
-import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-import javax.swing.table.TableColumn;
+public class ScheduleMaintenanceController {
 
-public class ScheduleMaintenanceController
-{
-    @javafx.fxml.FXML
-    private TableColumn StatusColumn;
-    @javafx.fxml.FXML
-    private TableColumn StaffNameColumn;
-    @javafx.fxml.FXML
-    private TableColumn RoleColumn;
-    @javafx.fxml.FXML
-    private TextField StaffNameTextField;
-    @javafx.fxml.FXML
-    private TableView ReportTableView;
-    @javafx.fxml.FXML
-    private Label ScheduleMaintenanceLabel;
+    @FXML
+    private TextField staffNameField;
+    @FXML
+    private TextField staffRoleField;
+    @FXML
+    private TextField trainingSessionField;
+    @FXML
+    private TextField fireStaffNameField;
+    @FXML
+    private TextField evaluateStaffNameField;
+    @FXML
+    private TextArea statusArea;
 
-    @javafx.fxml.FXML
-    public void initialize() {
+    @FXML
+    private void handleHireStaff() {
+        String staffName = staffNameField.getText();
+        String staffRole = staffRoleField.getText();
+
+        if (staffName.isEmpty() || staffRole.isEmpty()) {
+            statusArea.setText("Error: Please fill in all fields.");
+            return;
+        }
+
+        // Logic to hire staff (placeholder)
+        // For example: hireStaffInDatabase(staffName, staffRole);
+
+        statusArea.setText("Staff hired successfully: " + staffName + " as " + staffRole + ".");
+        clearFields();
     }
 
-    @javafx.fxml.FXML
-    public void btnConductTraining(ActionEvent actionEvent) {
+    @FXML
+    private void handleScheduleTraining() {
+        String trainingSession = trainingSessionField.getText();
+
+        if (trainingSession.isEmpty()) {
+            statusArea.setText("Error: Please enter training session details.");
+            return;
+        }
+
+        // Logic to schedule training (placeholder)
+        // For example: scheduleTrainingInDatabase(trainingSession);
+
+        statusArea.setText("Training session scheduled successfully: " + trainingSession + ".");
+        trainingSessionField.clear();
     }
 
-    @javafx.fxml.FXML
-    public void btnHireStaff(ActionEvent actionEvent) {
+    @FXML
+    private void handleFireStaff() {
+        String staffName = fireStaffNameField.getText();
+
+        if (staffName.isEmpty()) {
+            statusArea.setText("Error: Please enter the staff name to fire.");
+            return;
+        }
+
+        // Logic to fire staff (placeholder)
+        // For example: fireStaffInDatabase(staffName);
+
+        statusArea.setText("Staff fired successfully: " + staffName + ".");
+        fireStaffNameField.clear();
     }
 
-    @javafx.fxml.FXML
-    public void btnFireStaff(ActionEvent actionEvent) {
+    @FXML
+    private void handleEvaluatePerformance() {
+        String staffName = evaluateStaffNameField.getText();
+
+        if (staffName.isEmpty()) {
+            statusArea.setText("Error: Please enter the staff name to evaluate.");
+            return;
+        }
+
+        // Logic to evaluate staff performance (placeholder)
+        // For example: evaluateStaffPerformanceInDatabase(staffName);
+
+        statusArea.setText("Performance evaluated successfully for: " + staffName + ".");
+        evaluateStaffNameField.clear();
     }
 
-    @javafx.fxml.FXML
-    public void btnEvaluatePerformance(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void cmbRole(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void RoleComboBox(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void SelectRoleComboBox(ActionEvent actionEvent) {
+    private void clearFields() {
+        staffNameField.clear();
+        staffRoleField.clear();
     }
 }

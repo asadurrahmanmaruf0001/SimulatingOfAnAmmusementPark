@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="paBoarder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Santo.ParkAdminDashBoardController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="149.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#ManageRideOperationsOnAction" prefHeight="26.0" prefWidth="173.0" text="DashBoard" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ManageRideOperationsOnAction" prefHeight="26.0" prefWidth="154.0" text="Manage Ride Operations" />
+            <Button mnemonicParsing="false" onAction="#MonitorParkAttendanceOnAction" text="Monitor Park Attendance" />
+            <Button mnemonicParsing="false" onAction="#ScheduleMaintenanceforRidesOnAction" text=" Schedule Maintenance for Rides" />
+            <Button mnemonicParsing="false" onAction="#GenerateReportsonRidePerformanceOnAction" text="Generate Reports on Ride Performance" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="PaDashBoard" layoutX="106.0" layoutY="30.0" text="ParkAdmin DashBoard">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

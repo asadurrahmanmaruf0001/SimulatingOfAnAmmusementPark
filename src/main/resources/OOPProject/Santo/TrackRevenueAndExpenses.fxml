@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.TrackRevenueAndExpensesController">
+    <children>
+        <Label text="Daily Revenue:" layoutX="14.0" layoutY="14.0"/>
+        <TextField fx:id="dailyRevenueField" layoutX="120.0" layoutY="10.0" />
+
+        <Label text="Expenses:" layoutX="14.0" layoutY="50.0"/>
+        <TextField fx:id="expensesField" layoutX="120.0" layoutY="46.0" />
+
+        <Button text="Submit Revenue &amp; Expenses" layoutX="14.0" layoutY="86.0" onAction="#handleSubmit"/>
+
+        <Label text="Profit/Loss Summary:" layoutX="14.0" layoutY="120.0"/>
+        <TextArea fx:id="summaryArea" layoutX="14.0" layoutY="150.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Button text="Export Report" layoutX="14.0" layoutY="260.0" onAction="#handleExportReport"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="OOPProject.Santo.AssistGuestsController">
+    <children>
+        <Label text="Guest Assistance Dashboard" layoutX="14.0" layoutY="14.0" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+        <Label text="Guest Name:" layoutX="14.0" layoutY="50.0"/>
+        <TextField fx:id="guestNameField" layoutX="120.0" layoutY="46.0" />
+
+        <Label text="Safety Instructions:" layoutX="14.0" layoutY="90.0"/>
+        <TextArea fx:id="safetyInstructionsArea" layoutX="14.0" layoutY="120.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+
+        <Button text="Provide Safety Instructions" layoutX="14.0" layoutY="230.0" onAction="#handleProvideInstructions"/>
+
+        <Label text="Guest Questions:" layoutX="14.0" layoutY="270.0"/>
+        <TextArea fx:id="guestQuestionsArea" layoutX="14.0" layoutY="290.0" prefHeight="100.0" prefWidth="300.0" />
+
+        <Button text="Answer Questions" layoutX="14.0" layoutY="400.0" onAction="#handleAnswerQuestions"/>
+
+        <Label text="Log of Interactions:" layoutX="14.0" layoutY="440.0"/>
+        <TextArea fx:id="interactionLogArea" layoutX="14.0" layoutY="460.0" prefHeight="100.0" prefWidth="300.0" editable="false" />
+    </children>
+</AnchorPane>
