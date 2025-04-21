@@ -45,4 +45,31 @@ public class ParkAdminDashBoardController {
     }
 
 
+    @javafx.fxml.FXML
+    public void OverseeStaffSchedulesOnaction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/OverseeStaffSchedules.fxml"));
+        Parent root = fxmlLoader.load();
+        paBoarder.setCenter(root);
+    }
+
+    @javafx.fxml.FXML
+    public void ManageEmergencySituationsOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/ManageEmergencySituations.fxml"));
+        Parent root = fxmlLoader.load();
+        paBoarder.setCenter(root);
+    }
+
+    @javafx.fxml.FXML
+    public void SetParkPoliciesOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/SetParkPolicies.fxml"));
+        Parent root = fxmlLoader.load();
+        paBoarder.setCenter(root);
+    }
+
+    @javafx.fxml.FXML
+    public void TrackRevenueAndExpensesOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/TrackRevenueAndExpenses.fxml"));
+        Parent root = fxmlLoader.load();
+        paBoarder.setCenter(root);
+    }
 }

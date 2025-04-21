@@ -93,7 +93,7 @@ public class LoginFxml
             stage.show();
         }
 
-        else if (userID.equals("123456") && password.equals("Santo123")) {
+        else if (userID.equals("123456") && password.equals("Santo2210103")) {
 
             fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/ParkAdminDashBoard.fxml"));
             root = fxmlLoader.load();
@@ -104,17 +104,15 @@ public class LoginFxml
             stage.setTitle("Park Visitor Dashboard");
             stage.show();
 
-        }
-
-        else if (userID.equals("234567") && password.equals("Santo123")) {
-
+        }else if (userID.equals("1234567") && password.equals("Santo2210103")) {
+            // Load Maintenance Officer Dashboard
             fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/RideOperatorDashBoard.fxml"));
             root = fxmlLoader.load();
 
 
             scene = new Scene(root, 800, 400);
             stage.setScene(scene);
-            stage.setTitle("Park Visitor Dashboard");
+            stage.setTitle("Ride Operator Dashboard");
             stage.show();
 
         }

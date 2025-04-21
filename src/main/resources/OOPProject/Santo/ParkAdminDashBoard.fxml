@@ -9,22 +9,53 @@
 
 <BorderPane fx:id="paBoarder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OOPProject.Santo.ParkAdminDashBoardController">
    <left>
-      <VBox prefHeight="400.0" prefWidth="149.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="400.0" prefWidth="175.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#ManageRideOperationsOnAction" prefHeight="26.0" prefWidth="173.0" text="DashBoard" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ManageRideOperationsOnAction" prefHeight="26.0" prefWidth="154.0" text="Manage Ride Operations" />
-            <Button mnemonicParsing="false" onAction="#MonitorParkAttendanceOnAction" text="Monitor Park Attendance" />
-            <Button mnemonicParsing="false" onAction="#ScheduleMaintenanceforRidesOnAction" text=" Schedule Maintenance for Rides" />
-            <Button mnemonicParsing="false" onAction="#GenerateReportsonRidePerformanceOnAction" text="Generate Reports on Ride Performance" />
+            <Button mnemonicParsing="false" onAction="#ManageRideOperationsOnAction" prefHeight="40.0" prefWidth="179.0" text="DashBoard" textAlignment="CENTER" textFill="#cc2626">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ManageRideOperationsOnAction" prefHeight="40.0" prefWidth="177.0" text="Ride Control" textAlignment="RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#MonitorParkAttendanceOnAction" prefHeight="26.0" prefWidth="184.0" text="Crowd Tracking">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#ScheduleMaintenanceforRidesOnAction" prefHeight="26.0" prefWidth="182.0" text="Servicing">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#GenerateReportsonRidePerformanceOnAction" prefHeight="26.0" prefWidth="185.0" text="Ride Analytics">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#ManageEmergencySituationsOnAction" prefHeight="26.0" prefWidth="177.0" text="Crisis Management">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#TrackRevenueAndExpensesOnAction" prefHeight="26.0" prefWidth="187.0" text="Accounting">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#OverseeStaffSchedulesOnaction" prefHeight="26.0" prefWidth="182.0" text="Staff Schedules">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#SetParkPoliciesOnAction" prefHeight="26.0" prefWidth="185.0" text="Policies">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
          </children>
       </VBox>
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label fx:id="PaDashBoard" layoutX="106.0" layoutY="30.0" text="ParkAdmin DashBoard">
+            <Label fx:id="PaDashBoard" layoutX="19.0" layoutY="173.0" text="Welcome to Park Admin" textFill="#cc2626">
                <font>
-                  <Font size="24.0" />
+                  <Font size="36.0" />
                </font>
             </Label>
          </children>
