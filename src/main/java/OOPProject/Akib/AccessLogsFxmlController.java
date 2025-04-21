@@ -41,10 +41,9 @@ public class AccessLogsFxmlController {
         entryTimeTableColumn.setCellValueFactory(new PropertyValueFactory<>("entryTimeFormatted"));
         locationTableColumn.setCellValueFactory(new PropertyValueFactory<>("location"));
 
-        // Load initial access logs into the table
         updateTable(accessL);
 
-        // Fill ComboBox with unique locations from accessL
+
         ArrayList<String> locations = new ArrayList<>();
         for (AccessLogsModel log : accessL) {
             if (!locations.contains(log.getLocation())) {
