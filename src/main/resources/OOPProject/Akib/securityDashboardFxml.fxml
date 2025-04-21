@@ -20,6 +20,7 @@
             <Button layoutX="10.0" layoutY="138.0" mnemonicParsing="false" onAction="#activeAlarmsButtonOnAction" prefHeight="25.0" prefWidth="125.0" text="Active Alarms" />
             <Button layoutX="10.0" layoutY="164.0" mnemonicParsing="false" onAction="#emergencyProtocolButtonOnAction" prefHeight="25.0" prefWidth="125.0" text="Emergency Protocol" />
             <Button layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#clearanceButtonOnAction" prefHeight="25.0" prefWidth="125.0" text="Clearance" />
+            <Button mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="26.0" prefWidth="126.0" text="Log Out" />
          </children>
       </VBox>
    </left>

@@ -86,4 +86,16 @@ public class SecurityDashboardFxmlController {
         Parent root = fxmlLoader.load();
         securityBorderPane.setCenter(root);
     }
+
+    @javafx.fxml.FXML
+    public void logOutButtonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("loginFxml.fxml"));
+        Parent root = fxmlLoader.load();
+
+        javafx.stage.Stage stage = (javafx.stage.Stage) securityBorderPane.getScene().getWindow();
+
+        stage.setScene(new javafx.scene.Scene(root));
+        stage.setTitle("Login Page");
+        stage.show();
+    }
 }

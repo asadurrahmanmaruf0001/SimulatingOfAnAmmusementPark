@@ -20,6 +20,7 @@
             <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#maintenanceHistoryButtonOnAction" text="Maintenance History" />
             <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#sparePartsOrderButtonOnAction" text="Spare Parts Order" />
             <Button maxHeight="25.0" maxWidth="200.0" mnemonicParsing="false" onAction="#completeRepairButtonOnAction" text="Complete Repair" />
+            <Button mnemonicParsing="false" onAction="#logOutButtonOnAction" prefHeight="26.0" prefWidth="196.0" text="Log Out" />
          </children>
       </VBox>
    </left>
