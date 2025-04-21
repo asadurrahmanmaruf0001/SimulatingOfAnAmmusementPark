@@ -1,7 +1,8 @@
 package OOPProject;
 
 import OOPProject.Akib.MaintanceDashboardController;
-import OOPProject.Santo.ParkAdminDashBoardController;
+import OOPProject.Maruf.ParkVsiitorDashboardController;
+import OOPProject.Maruf.TicketSellerDashboard;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -55,7 +56,6 @@ public class LoginFxml
             stage.setTitle("Security Dashboard");
             stage.show();
 
-
         } else if (userID.equals("1234567") && password.equals("akib2331454")) {
             // Load Maintenance Officer Dashboard
             fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/MaintananceDashboardFxml.fxml"));
@@ -70,35 +70,32 @@ public class LoginFxml
             stage.setTitle("Maintenance Dashboard");
             stage.show();
 
-        }
+        } else if (userID.equals("123456") && password.equals("Maruf123")) {
 
-            else if (userID.equals("123456") && password.equals("santo123456")) {
-
-            fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/ParkAdminDashBoard.fxml"));
+            fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Maruf/ParkVsiitorDashboard.fxml"));
             root = fxmlLoader.load();
 
 
             scene = new Scene(root, 800, 400);
             stage.setScene(scene);
-            stage.setTitle("Park Admin Dashboard");
+            stage.setTitle("Park Visitor Dashboard");
+            stage.show();
+
+        }
+        else if (userID.equals("123456") && password.equals("Maruf123")) {
+            // Load Maintenance Officer Dashboard
+            fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Maruf/TicketSellerDashboard.fxml"));
+            root = fxmlLoader.load();
+
+            scene = new Scene(root, 800, 400);
+            stage.setScene(scene);
+            stage.setTitle("Ticket Seller Dashboard");
             stage.show();
         }
-                else if (userID.equals("234567") && password.equals("santo234567")) {
-
-                fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Santo/ParkAdminDashBoard.fxml"));
-                root = fxmlLoader.load();
 
 
-                scene = new Scene(root, 800, 400);
-                stage.setScene(scene);
-                stage.setTitle("Ride Operator Dashboard");
-                stage.show();
+        else {
 
-
-
-
-
-        } else {
             // Invalid login
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Login Failed");
@@ -106,10 +103,10 @@ public class LoginFxml
             alert.setContentText("Please check your ID and password.");
             alert.showAndWait();
         }
-
-
-
     }
+
+
+
 //        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Akib/MaintananceDashboardFxml.fxml"));
 //        Parent root = fxmlLoader.load();
 //        MaintanceDashboardController dc= fxmlLoader.getController();
