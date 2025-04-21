@@ -13,19 +13,19 @@ import java.util.ArrayList;
 
 public class SurveillanceFxmlController {
     @javafx.fxml.FXML
-    private ImageView camera2ImageView;
-    @javafx.fxml.FXML
     private ComboBox<String> cameraSelectComboBox;
     @javafx.fxml.FXML
     private DatePicker playBackDatePicker;
     @javafx.fxml.FXML
-    private ImageView camera1ImageView;
-    @javafx.fxml.FXML
-    private ImageView camera3ImageView;
-    @javafx.fxml.FXML
     private Label messageLabel;
 
     ArrayList<SurveillanceModel> accessLog = new ArrayList<>();
+    @javafx.fxml.FXML
+    private Label camera3Label;
+    @javafx.fxml.FXML
+    private Label camera1label;
+    @javafx.fxml.FXML
+    private Label camera2Label;
 
     @javafx.fxml.FXML
     public void initialize() {
